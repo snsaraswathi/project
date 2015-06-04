@@ -1,0 +1,29 @@
+
+<html>
+<body>
+
+<form action="" method ="post" id="form1">
+<input type="text" name="name" value="123">
+<input type="button" name ="submit1" value="submit1" onclick="clickme1()" >
+<input type="button" name ="submit2" value="submit2" onclick="clickme2()" >
+<input type="button" name ="submit3" value="submit3" onclick="clickme3()" >
+</form>
+<script>
+form=document.getElementById("form1");
+alert(form);
+function clickme1(){
+alert(form);
+form.action="1.php";
+form.submit();
+}
+function clickme2(){
+form.action="2.php";
+form.submit();
+}
+function clickme3(){
+form.action="3.php";
+form.submit();
+}
+</script>
+</body>
+</html>
